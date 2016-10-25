@@ -1,0 +1,113 @@
+<div id="williamstodo" class="container">
+<h1>Síndrome de Prader Willi</h1>
+<div class="rows">
+	<div class="col-md-4">
+		<div>
+			<button class="button small orange" (click)="onShowHide(true)" [class.showingData]="mostrarPrader=== true">¿Qué es el Síndrome de Prader Willi?</button>
+			<button class="button small orange" (click)="onShowHide(false)" [class.showingData]="mostrarPrader=== false">¿Qué es el Síndrome de Prader Willi?</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide1(true)" [class.showingData]="mostrarGenetica=== true">Posibles causas genéticas</button>
+			<button class="button small orange"(click)="onShowHide1(false)" [class.showingData]="mostrarGenetica=== false">Posibles causas genéticas</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide3(true)" [class.showingData]="mostrarDiagnostico=== true">Diagnóstico y causas</button>
+			<button class="button small orange" (click)="onShowHide3(false)" [class.showingData]="mostrarDiagnostico=== false">Diagnóstico y causas</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide4(true)" [class.showingData]="mostrarCarasteristicas=== true">Caraterísticas</button>
+			<button class="button small orange" (click)="onShowHide4(false)" [class.showingData]="mostrarCarasteristicas=== false">Carasterísticas</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide5(true)" [class.showingData]="mostrarAsociacionPrader=== true">Información sobre la Asociación</button>
+			<button class="button small orange" (click)="onShowHide5(false)" [class.showingData]="mostrarAsociacionPrader=== false">Información sobre la Asociación</button>
+		</div>
+		
+		<!-- Button trigger modal -->
+		<button class="button small orange" type="button" data-toggle="modal" data-target="#myModal">¡DONA!</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Haz un donativo</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>tienes la posibilidad de hacer un ingreso desde cualquier entidad bancaria en la cuenta de <b>BBVA 0182 – 7402 – 52 – 0011504057 </b></p>
+		        <a href="http://www.aespw.org/export/sites/aespw/.content/Documentos/Colaboradores2.pdf" target="_blank">Hazte socio</a>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div><!--col-6-->
+
+	<div id="wtodo" class="col-md-8">
+		<div>
+			<div class="divinfo" *ngIf="mostrarPrader === true">
+				<p>El Síndrome de Prader-Willi es una Enfermedad Rara muy compleja. Se trata de una alteración genética en el cromosoma 15 descrita clínicamente en 1956 por Prader, Labhart y Willi, que afecta de manera irremisible al hipotálamo, y por tanto muchas de las funciones que éste regula se ven perjudicadas. Es un síndrome poco frecuente ya que se estima que su recurrencia es de 1 afectado cada 15.000 nacidos.</p>
+
+				<p>El que una persona nazca con este síndrome no depende ni de la edad de los padres, ni de cómo haya transcurrido el embarazo, ni de que en la familia haya personas afectadas por otros trastornos, se debe únicamente a la ocurrencia del mencionado error genético. Dado su origen el SPW no tien cura posible, sin embargo el buen manejo del ambiente y el apoyo familiar y profesional han conseguido y están consiguiendo grandes mejoras en la calidad de vida de los afectados y las afectadas.</p>
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarGenetica === true">
+				<p>Las alteraciones genéticas que originan el SPW tiene como causa común la pérdida o inactivación de genes paternos en la región 15q11-q13 de cromosoma 15. El tipo de alteraciones genéticas y frecuencia de las mismas son las siguientes.</p>
+				<ul>
+					<li>Deleción " de novo" en el cromosoma 15 paterno en el 70 % de los casos.</li>
+					<li>Disomía uniparental del cromosoma 15 materno en el 25 % de los casos</li>
+					<li>Alteración del imprinting en el 3 -5 % de los casos.</li>
+					<li>Reorganizaciones cromosómicas en el 1 % de los casos.</li>
+				</ul>	 
+
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarDiagnostico === true">
+				
+				<p>Aunque para establecer el diagnóstico sería suficiente determinar el patrón de metilación, la importancia de discernir el déficit concreto es muy importante, porque la probabilidad de recurrencia se relaciona directamente con el tipo de alteración que produjo el síndrome. Siendo así es imprescindible conocer que, cuando en la familia hay un individuo SPW por deleción, el riesgo de recurrencia téorico es bajo, aproximadamente un 1 %, al igual que sucede con un paciente con disomía uniparenteral materna; sin embargo en caso de mutación de imprinting, el riesgo de recurrencia es alto, de un 50 %, puesto que los padres pueden ser portadores de la mutación (recordemos que esta causa solamente está presente en el 3 ó 5 % de los diagnosticos) y por último, si la aparición del síndrome se debe a alguna reorganización cromosómica (subyacente solo al 1 % de los casos), será aconsejable realizar estudio de FISH y/o microsatélites, ya que el riesgo de recurrencia va a depender del tipo de translocación.</p>
+				
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarCarasteristicas === true">
+
+				<p>El síndrome de Prader-Willi provoca disminución de la fuerza muscular, bajos niveles de hormonas sexuales y una sensación constante de hambre. La parte del cerebro que controla la saciedad o el hambre no funciona como debe en las personas con este síndrome. Ellos comen de manera excesiva, causando obesidad. </p>
+
+				<p>Los bebés con el síndrome de Prader-Willi suelen tener tejidos flojos, con poca fuerza muscular y tienen dificultades para mamar. Los niños pueden tener testículos no descendidos. Más adelante, aparecen otros signos. Entre ellos: </p>
+				<ul>
+					<li>Baja estatura</li>
+					<li>Habilidades motoras deficientes</li>
+					<li>Aumento de peso</li>
+					<li>Organos sexuales poco desarrollados</li>
+					<li>Discapacidad mental leve y discapacidades en el aprendizaje</li>
+				</ul>
+
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarAsociacionPrader === true">
+				<p>La Asociación Española para el Síndrome de Prader-Willi, es una entidad no lucrativa constituida el 25 de Febrero de 1995 e inscrita en el correspondiente Registro de Asociaciones con el número 145.120, el 3 de Mayo de ese mismo año; y declara de Utilidad Pública el 24 de Noviembre de 2006. El domicilio social de esta entida está sito en Madríd, aunque su ámbito de actuación corresponde a todo el territorio nacional. El objeto fundamental de la AESPW es la protección, asistencia, previsión educativa e integración social de las personas afectadas por el Síndrome de Prader- Willi y sus familias; siendo los fines estatutarios de la misma</p>
+				<ul>
+					<li><b>Nombre:</b>Asociación Española Síndrome Prader Willi</li>
+					<li><b>Teléfono:</b> 915 33 68 29</li>
+					<li><b>E-mail:</b> praderwillisindrome@gmail.com</li>
+					<li><a href="http://www.aespw.org">Página Web</a></li>
+					<li><b>Dirección:</b></li>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.3719865193766!2d-3.7690734846065843!3d40.33409337937482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41898b85da6d01%3A0x8bce34df4897af53!2sCalle+Rio+Ter%2C+2%2C+28913+Legan%C3%A9s%2C+Madrid!5e0!3m2!1ses!2ses!4v1475570637351" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</ul>
+			</div>
+		</div>
+	</div><!--col-6-->
+</div><!--rows-->
+
+
+</div><!--container-->
+
+
+

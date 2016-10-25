@@ -1,0 +1,65 @@
+<div class="container-fluid" id="opiniones">
+
+		<!-- Button trigger modal -->
+		<button id="enviar3"  type="button" data-toggle="modal" data-target="#myModal">¡OPINA!</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Comenta</h4>
+		      </div>
+		      <div class="modal-body">
+		       
+		       <form #añadeComentario="ngForm" (ngSubmit)= "onSubmitComentario()" >
+
+				<div class="input-group input-group-lg">
+				  <span class="input-group-addon" id="sizing-addon1"><div class="glyphicon glyphicon-user"></div></span>
+				  <input type="text" class="form-control" placeholder="Nombre" #nombre="ngForm" ngControl="nombre" [(ngModel)]="nuevoComentario.nombre" required pattern="[A-Za-z\s]*" >
+				</div>
+
+				<div class="input-group input-group-lg">
+				  <span class="input-group-addon" id="sizing-addon1"><div class=" glyphicon glyphicon-calendar"></div></span>
+				  <input type="text" class="form-control" placeholder="Edad"  #edad="ngForm" ngControl="edad" [(ngModel)]="nuevoComentario.edad" required pattern="[0-9]{2}">
+				</div>
+
+				<div class="input-group input-group-lg">
+				  <span class="input-group-addon" id="sizing-addon1"><div class="glyphicon glyphicon-pencil"></div></span>
+				  <textarea class="form-control" name="comment" rows="4" placeholder="Comentario"  #comentario="ngForm" ngControl="comentario" [(ngModel)]="nuevoComentario.comentario" required pattern="[A-Za-z\s]*"></textarea>
+				</div>
+				<br>
+				<input id="enviar1" type="submit" value="ENVIAR"/>
+			</form>
+		    </div>
+		  </div>
+		</div>
+		</div>
+
+
+
+			<div id="coment">
+
+				<table *ngFor="#opinion of opiniones">
+				   <tr>
+				      <td colspan="2">"<em>{{opinion.comentario}}</em>"</td>
+				   </tr>
+				   <tr>
+				      <td><strong>{{opinion.nombre}}</strong></td><td><strong>{{opinion.edad}} años</strong></td>
+				   </tr>
+				   <tr>
+				      <td colspan="2">
+				      	<div class="ec-stars-wrapper">
+							<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+							<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+							<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+							<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+							<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+						</div>
+				      </td>
+				   </tr>
+			   </table>
+
+			</div>
+</div>

@@ -1,0 +1,118 @@
+
+<div id="williamstodo" class="container">
+<h1>Síndrome de Williams</h1>
+<div class="rows">
+	<div class="col-md-4">
+		<div>
+			<button class="button small orange" (click)="onShowHide(true)" [class.showingData]="mostrarWilliams=== true">¿Qué es el Síndrome de Williams?</button>
+			<button class="button small orange" (click)="onShowHide(false)" [class.showingData]="mostrarWilliams=== false">¿Qué es el Síndrome de Williams?</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide1(true)" [class.showingData]="mostrarCausas=== true">Causas</button>
+			<button class="button small orange"(click)="onShowHide1(false)" [class.showingData]="mostrarCausas=== false">Causas</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide3(true)" [class.showingData]="mostrarClinicas=== true">Características Clínicas</button>
+			<button class="button small orange" (click)="onShowHide3(false)" [class.showingData]="mostrarClinicas=== false">Características Clínicas</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide4(true)" [class.showingData]="mostrarRiesgos=== true">Heredabilidad y Riesgo</button>
+			<button class="button small orange" (click)="onShowHide4(false)" [class.showingData]="mostrarRiesgos=== false">Heredabilidad y Riesgo</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide5(true)" [class.showingData]="mostrarAsociacion=== true">Información sobre la Asociación</button>
+			<button class="button small orange" (click)="onShowHide5(false)" [class.showingData]="mostrarAsociacion=== false">Información sobre la Asociación</button>
+		</div>
+		
+		<!-- Button trigger modal -->
+		<button class="button small orange" type="button" data-toggle="modal" data-target="#myModal">¡DONA!</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Haz un donativo</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>tienes la posibilidad de hacer un ingreso desde cualquier entidad bancaria en la cuenta de <b>CAJAMADRID número 2038 1796 79 6000306859</b></p>
+		        <a href="http://www.sindromewilliams.org/images/stories/pdf/SocioOrdinario.pdf" target="_blank">Hazte socio</a>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div><!--col-6-->
+
+	<div id="wtodo" class="col-md-8">
+		<div>
+			<div class="divinfo" *ngIf="mostrarWilliams === true">
+				El Síndrome de Williams es un trastorno del desarrollo que ocurre en 1 de cada 7.500 recién nacidos. Está caracterizado por la tetrada de:
+				<ul>
+				    <li>Rasgos faciales típicos</li>
+				    <li>Discapacidad intelectual leve o moderada</li>
+				    <li>Hipercalcemia (niveles de calcio en sangre elevados) en la infancia</li>
+				    <li>Estenosis aórtica supravalvular, (un estrechamiento de la arteria principal inmediatamente al salir del corazón)</li>
+		    	</ul>
+				Ya en los años 50 se describieron niños con hipercalcemia y rasgos faciales comunes, así como una discapacidad intelectual y un soplo cardíaco. La asociación de este conjunto de alteraciones con una probable causa común (eso significa síndrome) fue publicada por Williams en 1961 y Beuren en 1962, y de ahí deriva su nombre de síndrome de Williams o de Williams-Beuren.
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarCausas === true">
+			
+				 <p>El síndrome de Williams es una enfermedad genética. Se debe a una deleción en un cromosoma 7, en la banda cromosómica 7q 11.23, que se denomina submicroscópica porque no se aprecia bien cuando se visualizan los cromosomas al microscopio. Una deleción consiste en la pérdida de parte del material genético, el ADN.<p>
+
+				 <p>Por tanto, en las personas con síndrome de Williams, uno de los cromosomas 7 homólogos (el procedente del esperma o del óvulo) ha perdido un fragmento de información en la banda q11.23, con un número de genes todavía no determinado pero que puede oscilar entre 20-40 (de los 80.000 existentes). La pérdida de esos genes puede causar que las funciones que en ellos se representan no ocurran normalmente. Sin embargo, dado que existe otra copia normal en el otro cromosoma 7, no todos los genes deleccionados funcionan mal.</p>
+
+				<p>La deleción se produce casi siempre durante la división celular que da origen al espermatozoide o al óvulo, meiosis, por un error de la naturaleza que es inevitable y del que nadie es responsable.</p>
+
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarClinicas === true">
+				
+				<p> Neurológicas y de comportamiento</p>
+			    Presentan una discapacidad intelectual leve o moderada con CI medio de 60-70 (CI normal > 80).
+			    Existe una asimetría mental, en el sentido de que tienen déficits en algunas áreas (psicomotricidad, integración visuo-espacial), mientras que otras facetas están casi preservadas (lenguaje), o incluso más desarrolladas (sentido de musicalidad). Su personalidad es muy amigable, desinhibida, entusiasta y gregaria.
+			    <p>Otras características pueden ser:</p>
+			    <p>Rasgos faciales, que pueden no ser evidentes hasta los 2 ó 3 años de edad</p>
+			    <p>Cardiovasculares</p>
+			    <p>Endocrino-metabólicas</p>
+			    <p>Manifestaciones que afectan al sistema músculo-esquelético</p>
+			    <p>Manifestaciones que afectan al aparato digestivo</p>
+			    <p>Manifestaciones que afectan al sistema urinario</p>
+			    <p>Manifestaciones que afectan a los ojos</p>
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarRiesgos === true">
+				El riesgo de que vuelva a darse un segundo caso de síndrome de Williams de los mismos padres o en familiares cercanos es despreciable. Sin embargo, las personas con síndrome de Williams pueden transmitir la lesión molecular, y por tanto la enfermedad, al 50% de sus descendientes (de manera autosómica dominante)
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarAsociacion === true">
+				Con la denominación Asociación Síndrome Williams de España se constituye el 25 de Enero de 1.995 nuestra entidad, acogiéndose a lo dispuesto en la Ley 191/64, de 24 de Diciembre y normas complementarias del Decreto 1440/85, de 20 de Mayo, como Asociación pr7ivada sin ánimo de lucro.
+				Declarada de UTILIDAD PUBLICA por secretaria Técnica del Ministerio del Interior, en virtud de la Orden de 12/09/2006.
+				<ul>
+					<li><b>Nombre:</b> Asociación Síndrome Williams de España</li>
+					<li><b>Teléfono:</b> 914 136 227</li>
+					<li><b>Fax:</b> 915 102 261</li>
+					<li><b>E-mail:</b> sindromewilliams@gmail.com</li>
+					<li><a target="_blank" href="http://www.sindromewilliams.org">Página Web</a></li>
+					<li><b>Dirección:</b></li>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.3944249333!2d-3.5690900850966663!3d40.44440636188072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42303bc5a3f4d5%3A0xeabe639e9a352400!2sCalle+Mayo%2C+37B%2C+28022+Madrid!5e0!3m2!1ses!2ses!4v1475249612259" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</ul>
+			</div>
+		</div>
+	</div><!--col-6-->
+</div><!--rows-->
+
+
+</div><!--container-->
+
+
+

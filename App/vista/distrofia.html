@@ -1,0 +1,123 @@
+<div id="williamstodo" class="container">
+<h1>Distrofia Muscular de Duchenne</h1>
+<div class="rows">
+	<div class="col-md-4">
+		<div>
+			<button class="button small orange" (click)="onShowHide(true)" [class.showingData]="mostrarDistrofia=== true">¿Qué es DMD?</button>
+			<button class="button small orange" (click)="onShowHide(false)" [class.showingData]="mostrarDistrofia=== false">¿Qué es DMD?</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide1(true)" [class.showingData]="mostrarCausasDistrofia=== true">Causas</button>
+			<button class="button small orange"(click)="onShowHide1(false)" [class.showingData]="mostrarCausasDistrofia=== false">Causas</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide3(true)" [class.showingData]="mostrarEtapas=== true">Etapas de la enfermedad</button>
+			<button class="button small orange" (click)="onShowHide3(false)" [class.showingData]="mostrarEtapas=== false">Etapas de la enfermedad</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide4(true)" [class.showingData]="mostrarManifestaciones=== true">Síntomas y manifestaciones clínicas</button>
+			<button class="button small orange" (click)="onShowHide4(false)" [class.showingData]="mostrarManifestaciones=== false">Síntomas y manifestaciones clínicas</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide5(true)" [class.showingData]="mostrarAsociacionDistrofia=== true">Información sobre la Asociación</button>
+			<button class="button small orange" (click)="onShowHide5(false)" [class.showingData]="mostrarAsociacionDistrofia=== false">Información sobre la Asociación</button>
+		</div>
+		
+		<!-- Button trigger modal -->
+		<button class="button small orange" type="button" data-toggle="modal" data-target="#myModal">¡DONA!</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Haz un donativo</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>tienes la posibilidad de hacer un ingreso desde cualquier entidad bancaria en la cuenta de <b>OpenBank ES37 0073 0100 5202 0402 8187 </b></p>
+		        <a href="https://www.duchenne-spain.org/hazte-socio-de-duchenne-parent-project-espana/" target="_blank">Hazte socio</a>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div><!--col-6-->
+
+	<div id="wtodo" class="col-md-8">
+		<div>
+			<div class="divinfo" *ngIf="mostrarDistrofia === true">
+				
+				<p>La Distrofia Muscular de Duchenne (DMD) es la distrofia muscular más común diagnosticada durante la infancia. Limita significativamente los años de vida de los afectados. Afecta a 1 de cada 3.500 niños en el mundo (alrededor de 20.000 casos nuevos cada año).</p>
+
+				<p>Es un desorden progresivo del músculo que causa la pérdida de su función y por lo tanto los afectados terminan perdiendo totalmente su independencia. La debilidad muscular progresiva lleva a problemas médicos graves. Los niños necesitan silla de ruedas alrededor de los 12 años y la expectativa de vida promedio es de 30 años.</p>
+
+				<p>Actualmente no existe cura para estas enfermedades, pero por primera vez, existen terapias prometedoras en investigación y tratamientos que pueden retardar la progresión o prevenir complicaciones secundarias.</p>
+
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarCausasDistrofia === true">
+				
+				<p>La enfermedad es causada por una mutación en el gen que codifica la distrofina. Debido a que la distrofina está ausente, las células musculares se dañan fácilmente. La debilidad muscular progresiva lleva a problemas médicos graves.</p>
+
+				 <p>La DMD se manifiesta principalmente en los varones debido a que el gen de la DMD se encuentra en el cromosoma X. La mutación del gen que causa Duchenne, generalmente se transmite de la madre al hijo, sin embargo un 35% de los casos ocurren por mutación espontánea “de-novo”. Puede ocurrir en cualquier familia, no conoce fronteras y afecta a todas las culturas y razas.</p>
+
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarEtapas === true">
+				
+				<h4>ETAPA TEMPRANA (a partir del diagnóstico hasta los 7 años)</h4>	
+				<p>Duchenne es generalmente diagnosticado entre los 2 y 7 años de edad. Muchas veces se presentan retrasos en las metas de desarrollo como sentarse, caminar y/o hablar. El retraso en el lenguaje y/o la inhabilidad de mantenerse dentro de los parámetros de sus compañeros de edad, serán las primeras señales de la enfermedad.</p>
+
+				<h4>ETAPA de TRANSICIÓN (edades 6 a 9)</h4>
+				<p>Durante este tiempo, un niño con Duchenne tendrá más y más dificultad para caminar en la medida que sus cuadriceps (los músculos al frente de los muslos) crecen débiles.
+				No obstante puede no ser aparente, él puede empezar a presentar problemas de corazón que requieren tratamiento médico (después de todo, el corazón es también un músculo). La mayoría de los niños en esta edad, tiene pleno uso de sus manos y brazos, pero pueden tener dificultad cargando sus libros y otros materiales escolares.</p>
+				
+				<h4>PÉRDIDA de CAPACIDAD de CAMINAR (edades 10 a 14)</h4>
+				<p>Los años de adolescencia traen una continua progresión de debilidad. Cerca de los 12 años de edad, la mayoría de los niños con Duchenne necesitan usar una silla de ruedas motorizada de manera regular. Las actividades que involucran los brazos, piernas o tronco requerirán de ayuda o soporte mecánico. No sorprende que la fatiga sea muy común. La mayoría de los jóvenes, de cualquier manera, mantienen el uso de sus dedos hasta esta etapa, de manera que generalmente aún pueden escribir o usar un ordenador.</p>
+
+				<h4>ETAPA JOVEN ADULTO (edades 15+)</h4>
+				<p>Cuando la evolución de la enfermedad progresa, las condiciones respiratorias y cardíacas que amenazan la vida se hacen más prevalentes. Los síntomas mayores de las complicaciones del corazón y pulmones incluyen respiración corta, fluido en los pulmones, edema o hinchazón en los pies y parte baja de las piernas. Las familias pueden optar por tener un tubo de traqueotomía que le ayudará a respirar.</p>
+				<p>Hasta hace unos años los adultos jóvenes con Duchenne usualmente fallecian antes de los 30 años debido a este tipo de complicaciones, pero actualmente con los cuidados y tratamientos apropiados pueden sobrepasar los 40.</p>
+				
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarManifestaciones === true">
+
+				<ul>
+					<li><b>Atraso en el habla y problemas de conducta:</b>  los problemas de lenguaje son generalmente los primeros síntomas de la Distrofia Muscular de Duchenne, DMD. Aproximadamente un tercio de los jóvenes con DMD, presenta algún tipo de problema de aprendizaje.</li>
+					<li><b>Debilidad Muscular:</b> generalmente crecen con poca fuerza para realizar sus actividades de rutina y se quejan de que sus piernas están cansadas.</li>
+					<li><b>Rigidez / contracturas:</b> principalmente en tobillos, rodillas, y caderas.</li>
+					<li><b>Escoliosis:</b> es el encorvamiento tri-dimensional de la espina dorsal. Se desarrolla usualmente en la parte media y lumbar de la espina.</li>
+					<li><b>Disfunción respiratoria:</b>  incrementa el riesgo de infecciones y dificultades para toser, una gripe puede convertirse en neumonía. Los síntomas incluyen dolores de cabeza, embotamiento mental, dificultad para concentrarse o mantenerse despierto, así como pesadillas.</li>
+				</ul>				
+
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarAsociacionDistrofia === true">
+				
+				Duchenne Parent Project España es una asociación sin ánimo de lucro creada y dirigida por padres de niños con DMD/DMB.
+				Esta centrada únicamente en esta enfermedad porque para nosotros los afectados Duchenne/Becker y sus familias son siempre lo primero.
+				<ul>
+					<li><b>Nombre:</b> Duchenne Parent Project España (DPPE)</li>
+					<li><b>Teléfono:</b> 685 27 27 94</li>
+					<li><b>E-mail:</b> info@duchenne-spain.org</li>
+					<li><a href="https://www.duchenne-spain.org">Página Web</a></li>
+				</ul>
+			
+			</div>
+		</div>
+	</div><!--col-6-->
+</div><!--rows-->
+
+
+</div><!--container-->
+
+

@@ -1,0 +1,106 @@
+<div id="williamstodo" class="container">
+<h1>Síndrome de Hucher</h1>
+<div class="rows">
+	<div class="col-md-4">
+		<div>
+			<button class="button small orange" (click)="onShowHide(true)" [class.showingData]="mostrarHucher=== true">¿Qué es el Síndrome de Usher?</button>
+			<button class="button small orange" (click)="onShowHide(false)" [class.showingData]="mostrarHucher=== false">¿Qué es el Síndrome de Usher?</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide1(true)" [class.showingData]="mostrarHCausas=== true">Causas y heredabilidad</button>
+			<button class="button small orange" (click)="onShowHide1(false)" [class.showingData]="mostrarHCausas=== false">Causas y heredabilidad</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide3(true)" [class.showingData]="mostrarTipos=== true">¿Qué tipos hay?</button>
+			<button class="button small orange" (click)="onShowHide3(false)" [class.showingData]="mostrarTipos=== false">¿Qué tipos hay?</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide4(true)" [class.showingData]="mostrarSintomas=== true">Síntomas que presentan</button>
+			<button class="button small orange" (click)="onShowHide4(false)" [class.showingData]="mostrarSintomas=== false">Síntomas que presentan</button>
+		</div>
+
+		<div>
+			<button class="button small orange" (click)="onShowHide5(true)" [class.showingData]="mostrarAsociacion=== true">Información sobre la Asociación</button>
+			<button class="button small orange" (click)="onShowHide5(false)" [class.showingData]="mostrarAsociacion=== false">Información sobre la Asociación</button>
+		</div>
+
+		<button class="button small orange" type="button" data-toggle="modal" data-target="#myModal">¡DONA!</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Haz un donativo</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>tienes la posibilidad de hacer un ingreso desde cualquier entidad bancaria en la cuenta de <b>La Caixa, CC 2100 2926 44 0200024382; IBAN ES94 2100 2926 4402 0002 4382</b></p>
+		        <a href="http://www.apascide.org/index.php/dona/hazte-socio" target="_blank">Hazte socio</a>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div><!--col-6-->
+
+	<div id="wtodo" class="col-md-8">
+		<div>
+			<div class="divinfo" *ngIf="mostrarHucher === true">
+				<p>Es una enfermedad hereditaria que causasordera o hipoacusia desde el nacimiento, y deterioro de la visión debido a una alteración del ojo denominada Retinitis Pigmentaria.</p>
+
+				<p>El síndrome de Usher es una de los problemas más difíciles a los que uno se puede enfrentar. La persona nace con sordera o hipoacusia, y gradualmente va perdiendo vista al final de su infancia o en la adolescencia. Pero a pesar del enorme desafío que supone, las personas con síndrome de Usher pueden seguir con su proyecto de vida, y disfrutar de su tiempo libre como cualquier persona.</p>
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarHCausas === true">
+			
+				 <p>El síndrome de Usher es una enfermedad hereditaria del tipo conocido como "recesivo". Esto quiere decir que hace falta que ambos padres lo lleven en los genes, aunque no padezcan la enfermedad. Esto es lo que se llama "portador" (lleva la enfermedad en los genes pero no la padece). Cuando una pareja ha tenido un hijo con síndrome de Usher, cada uno de los hijos siguientes tendrá un 25% de probabilidades de nacer con él. </p>
+
+				 <p>Si tienes un hermano con el síndrome de Usher, pero tú no lo tienes, tienes un 50% de probabilidades de ser "portador". Para que tus hijos lo padecieran, tendrías que tener hijos con otra persona que fuera portadora de la misma alteración, y en ese caso, cada hijo tendría un 25% de probabilidades de tener síndrome de Usher</p>
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarTipos === true">
+				
+				La mayoría de los casos pertenece a 3 tipos:
+				<ul>
+				    <li><b>Tipo I:</b> las personas nacen con sordera profunda, de forma que no pueden oír el habla ni siquiera con audífonos. Tienen dificultades en el equilibrio, y pueden tener retraso en la edad de sentarse o de caminar. La retinitis pigmentosa parece que ocurre entre los 8 y los 12 años. Debido a la sordera profunda, el aprendizaje de la lengua hablada puede ser muy difícil.
+				    </li>
+				    <li><b>Tipo II:</b> la sordera también es de nacimiento, y va de moderada a severa. Como la sordera es parcial, a menudo no se diagnostica de sordera hasta los 4 ó 5 años. Tienen normal el equilibrio. Depende fuertemente de los audífonos para aprender a hablar o entender el habla. La retinitis pigmentosa parece ocurrir en la adolescencia.
+				    </li>
+				    <li><b>Tipo III:</b> es más rara. Se produce retinitis pigmentosa y sordera progresiva en jóvenes que de niños parecían oír y ver bien. Cuando se diagnostica la retinitis pigmentosa, habitualmente de 20 a 30 años de edad, ya puede haber sordera ligera. Durante su vida adulta su vista y su oído empeoran progresivamente. Es más frecuente en los países nórdicos.
+				    </li>
+   				</ul>
+		
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarSintomas === true">
+				<p>El primer síntoma que aparece es la ceguera nocturna. Se suele acompañar de dificultad para adaptarse a la luz brillante. Cuando un niño sordo comienza a tener dificultades para adaptarse a los cambios de luz, hay que sospechar la retinitis pigmentosa. Con frecuencia estos síntomas iniciales se han atribuido a mal comportamiento o a torpeza.</p>
+
+				 <p>Otro síntoma es el deterioro en el campo visual periférico. El individuo pierde la capacidad de localizar los objetos que ve por los lados. En su grado más extremo se denomina visión en túnel. Puede leer un horario dentro de la parada del autobús, pero no puede encontrar la parada del autobús sin ayuda. </p>
+
+				 <p>Estas alteraciones se deben sobre todo al deterioro de los bastones. Cuando se alteran también los conos, se pierde agudeza visual. No puede identificar los detalles aunque mire los objetos de frente. En este caso las ayudas ópticas, como lentes o pantallas de ayuda para la lectura son muy útiles.</p>		
+			</div>
+
+			<div class="divinfo" *ngIf="mostrarAsociacion === true">
+				<p>Esta Asociación surgió de la necesidad de sensibilizar tanto a las administraciones públicas como a la sociedad en general respecto a la singularidad de la sordoceguera como minusvalía específica y así dar respuesta a las necesidades que se les plantean a las familias con hijos sordociegos.  Se funcó en 1991, por un grupo de padres reunidos en la I Conferencia Nacional de Padres de Sordociegos.</p>
+				<p>La misión de nuestra entidad es conseguir  el bienestar y la integración dentro de la sociedad de las personas con sordoceguera y de sus familias, y facilitar que las personas con sordoceguera puedan desarrollar al máximo sus capacidades y llevar una vida digna y plena.</p>
+                <ul>
+				<li><b>Nombre:</b> Asociación Española de Familias de Personas con Sordoceguera</li>
+				<li><b>Teléfono:</b> 91 733 40 17 o al 91 733 52 08</li>
+				<li><a href="http://www.apascide.org" target="_blank">Página Web</a></li>
+				<li><b>Dirección:</b></li>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.29178739451!2d-3.700400378096703!3d40.46880936463602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229097f7c3973%3A0x3b145cbf697a6a57!2sCalle+del+Divino+Redentor%2C+48%2C+28029+Madrid!5e0!3m2!1ses!2ses!4v1475431355774" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</ul>
+			</div>
+		</div>
+	</div><!--col-6-->
+</div><!--rows-->
+
+
+</div><!--container-->
+

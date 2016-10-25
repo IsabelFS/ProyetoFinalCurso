@@ -1,0 +1,19 @@
+                
+                <div class="container" id="carrusel">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <carousel [interval]="NextPhotoInterval" [noWrap]="noLoopSlides">
+                          <slide *ngFor="#slidez of slides; #index=index"
+                                 [active]="slidez.active">
+                            <img [src]="slidez.image" width="auto" height="550" style=" margin:auto">
+                            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/82Mkwvgllx4" frameborder="0" allowfullscreen></iframe>-->
+
+                            <div class="carousel-caption">
+                              <h3 style="background-color: transparent;color: white;">{{slidez.titulo}}</h3>
+                              <p  style="background-color: transparent;color: white;">{{slidez.text}}</p>
+                            </div>
+                          </slide>
+                        </carousel>
+                      </div>
+                    </div>
+                  </div>

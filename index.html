@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Enfermedades Raras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="./assets/css/estilos.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome-4.6.3/css/font-awesome.min.css"/>
+    
+ 
+    <!-- 1. Cargar librerías -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
+ 
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script> <!--rutas-->
+    <base href="/">
+
+    <!--bootstrap-->
+    <META name="viewport" content="width=device-width, user-scalable=no, 
+      initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">    <!--Siempre es así para documento reponsive-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+
+    <!--icono navegador-->
+    <link rel="icon" type="image/jpg" href="assets/image/índice.jpg"/>
+ 
+    <!-- 2. Configurar SystemJS -->
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+
+    
+    </script>
+  </head>
+ 
+  <!-- 3. Mostramos la aplicación -->
+  <body>
+    <my-app><i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i><span class="sr-only">Loading...</span></my-app>
+
+
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<script type="text/javascript" src="bootstrap_jquery/js/jquery-2.2.4.js"></script> <!--para instalar jquery y bootstrap-->
+<script type="text/javascript" src="bootstrap_jquery/js/bootstrap.min.js"></script> <!--para instalar jquery y bootstrap-->
+  </body>
+
+
+</html>

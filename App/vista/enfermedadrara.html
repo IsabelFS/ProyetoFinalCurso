@@ -1,0 +1,103 @@
+<div id="enfermedades" class="container">
+
+	<h1>Sobre las Enfermedades Raras</h1>
+	<p>
+	Las enfermedades raras son aquellas que tienen una baja incidencia en la población. Para ser considerada como rara, cada enfermedad específica sólo puede afectar a un número limitado de personas. Concretamente, cuando afecta a menos de 5 de cada 10.000 habitantes.
+
+	Sin embargo, las patologías poco frecuentes afectan a un gran número de personas, ya que según la Organización Mundial de la Salud (OMS), existen cerca de 7.000 enfermedades raras que afectan al 7% de la población mundial. En total, se estima que en España existen más de 3 millones de personas con enfermedades poco frecuentes.
+
+	Por esta razón, cualquier persona puede sufrir una patología poco frecuente, en cualquier etapa de la vida.
+	</p>
+
+
+	<h1>Las Enfermedades Raras en cifras</h1>
+
+	<h3>El diagnóstico de las enfermedades raras</h3>
+
+			<p>	
+				El promedio de tiempo estimado que transcurre entre la aparición de los primeros síntomas hasta la consecución del diagnóstico es de 5 años. En uno de cada cinco casos transcurren 10 o más años hasta lograr el diagnóstico adecuado. El retraso diagnóstico tiene diversas consecuencias. La más frecuente es no recibir ningún apoyo ni tratamiento (40,9%), aunque también destacan el haber recibido un tratamiento inadecuado (26,7%) y el agravamiento de la enfermedad (26,8%).
+			</p>
+
+			<strong>NINGÚN APOYO O TRATAMIENTO</strong>
+			<div class="progress">
+				  <div id="barra1" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+				  40,9%
+				    <span class="sr-only">40% Complete (success)</span>
+				  </div>
+			</div>
+
+			<strong>TRATAMIENTO INADECUADO</strong>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 26%">
+				  26,7%
+				    <span class="sr-only">26% Complete (success)</span>
+				  </div>
+			</div>
+
+			<strong>AGRAVAMIENTO DE LA ENFERMEDAD</strong>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 26%">
+				  26,8%
+				    <span class="sr-only">26% Complete (success)</span>
+				  </div>
+			</div>
+
+
+		<h3>Atención sanitaria</h3>
+
+		<p>
+			El 46,6% de las personas no se sienten satisfechos con la atención sanitaria que reciben por motivo de su enfermedad. Para más del 40% de las personas las razones es que reciben un tratamiento que consideran inadecuado o bien no disponen del tratamiento que necesitan. El 72% considera que al menos alguna vez ha sido tratado de un modo inadecuado por algún profesional sanitario como consecuencia de su enfermedad, principalmente por falta de conocimientos sobre la enfermedad (el 56%). Para el 36% de los afectados la cobertura de los productos sanitarios por parte de la Sanidad Pública es escasa o nula. En el 85% de los casos, estos medicamentos coadyuvantes y productos sanitarios son tratamientos continuos o de larga duración. Sólo el 6% de los afectados utiliza medicamentos huérfanos. De ellos, el 51% de las familias tienen dificultades para acceder a los mismos.
+
+		</p>
+
+		<i (mouseover)="onShowHide(true)" [class.showingData]="mostrarCorazon=== true" id="corazon" class=" corazon fa fa-heartbeat fa-5x" aria-hidden="true"></i>
+
+		<div  *ngIf="mostrarCorazon === true">
+
+			<strong>ATENCIÓN SANITARIA INSATIFACTORIA</strong>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 46%">
+				  46,6%
+				    <span class="sr-only">46% Complete (success)</span>
+				  </div>
+			</div>
+		</div>
+
+		<h3>Situación actual y percepción de discriminación</h3>
+
+		<p>
+			El 75% de la muestra se ha sentido discriminada al menos en alguna ocasión por motivo de su enfermedad. Los principales ámbitos en los que las personas se sienten discriminadas son, por este orden, en el disfrute de su ocio (un 32%), en la atención sanitaria (32%), en el ámbito educativo (30%) y en las actividades de la vida cotidiana (30%).
+		</p>
+
+		<div id="barras" class="progress">
+			  <div class="progress-bar progress-bar-success" style="width: 27%">
+			  	<i class="fa fa-futbol-o fa-2x" aria-hidden="true">  32% Disfrute del ocio</i>
+			    <span class="sr-only"></span>
+			  </div>
+			  <div class="progress-bar progress-bar-warning" style="width: 27%">
+			  <i class="fa fa-heart-o fa-2x" aria-hidden="true">32% Atención sanitaria</i>
+			    <span class="sr-only"></span>
+			  </div>
+			  <div class="progress-bar progress-bar-info" style="width: 23%">
+			  <i class="fa fa-graduation-cap fa-2x" aria-hidden="true">30% Ámbito educativo</i>
+			    <span class="sr-only"></span>
+			  </div>
+			  <div class="progress-bar progress-bar-danger" style="width: 23%">
+			  <i class="fa fa-users fa-2x" aria-hidden="true">30% Actividades cotidianas</i>
+			    <span class="sr-only"></span>
+			  </div>
+		</div>
+
+
+		<h3>Necesidades de apoyo, dependencia y situación laboral</h3>
+
+		<p>
+			Más de un 70% de los afectados posee el certificado de discapacidad, aunque el 35% aseguran que no están satisfechos con el grado reconocido, normalmente porque consideran que no se les hizo una valoración adecuada por falta de conocimiento acerca de la enfermedad. A pesar que el 70% dispone de certificado de discapacidad, sólo uno de cada 5 tiene el reconocimiento, y de éstos sólo uno de cada 3 han recibido ya prestación. La medida de dedicación al cuidado de un afectado es de 5 horas diarias. Por lo general, necesitan apoyos para desarrollar actividades básicas y avanzadas de la vida diaria, principalmente en su vida doméstica (44%), desplazamientos (42%) o movilidad (39%). Sólo 1 de cada 10 no necesitaría ningún tipo de apoyo. Lo más habitual es que los apoyos que se requieran sean dispensados por los propios familiares residentes en el hogar, principalmente los padres (un 41%), pero también hermanos (17%), esposos/as (14%) o abuelos (10%). Un 41% de los casos han perdido oportunidades laborales. En un 37% se ha tenido que reducir la jornada laboral y en un 37% se han perdido oportunidades de formación.
+		</p>
+
+
+
+
+
+
+</div> <!--container-->

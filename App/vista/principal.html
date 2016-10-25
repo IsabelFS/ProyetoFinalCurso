@@ -1,0 +1,58 @@
+<div class="container-fluid">
+<nav  id="mainNav" class="navbar navbar navbar-fixed-top">
+      
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span> Menú <i class="fa fa-bars"></i>
+                </button>
+                <a  id="adopta" class="navbar-brand page-scroll" [routerLink]="['Adopta']">EnfermedadesRaras</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="barra">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a aria-haspopup="true" class="page-scroll" [routerLink]="['Movimiento']" >Conoce nuestro movimiento</a>
+                    </li>
+
+                    <li>
+                        <a aria-haspopup="true" class="page-scroll" [routerLink]="['EnfermedadRara']">¿Qué es una enfermedad rara?</a>
+                    </li>
+
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Conoce alguna de ellas <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a [routerLink]="['Williams']">Síndrome de Williams</a></li>
+                            <li><a [routerLink]="['Hucher']">Síndrome de Usher</a></li>
+                            <li><a [routerLink]="['Distrofia']"> Distrofia Muscular de Duchenne</a></li>
+                            <li><a [routerLink]="['Prader']">Síndrome Prader Willi</a></li>
+                        </ul>
+                     </li>
+                    
+                    <li>
+                        <a aria-haspopup="true" class="page-scroll" [routerLink]="['Opinion']">Tu opinión cuenta</a>
+                    </li>
+                    
+                    <li>
+                        <a aria-haspopup="true" class="page-scroll" [routerLink]="['Contacta']">Contacta</a>
+                    </li>
+                    
+                    <li>
+                        <a aria-haspopup="true" class="page-scroll" href="http://www.twitter.com" target="_blanck"><i style="color: #00ABF1" class="fa fa-twitter-square fa-lg"></i></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://www.facebook.com" target="_blanck"><i style="color: #3B5998" class="fa fa-facebook-square fa-lg"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</div>
+
+
+
+<router-outlet></router-outlet>
+

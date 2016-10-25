@@ -1,0 +1,477 @@
+/*CONOCELAS*/
+#todoconocelas {
+  margin-top: 50px;
+ height: 600px;
+ width: auto;
+}
+
+.conocelasrows{
+  margin-top: 20px;
+  border: solid 3px #E9A425;
+  border-radius: 10px;
+  margin-right: 400px;
+  margin-left: 400px;
+  text-align: center;
+}
+
+#conocelastexto {
+  text-align: center;
+  background-color:#E9A425;
+  padding-top: 20px;
+  padding-bottom: 20px;
+box-shadow: 9px 4px 20px #000000;
+}
+
+.button{
+  font:10px Arial, sans-serif;
+
+  /* A semi-transparent text shadow */
+  text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+  
+  /* Overriding the default underline styling of the links */
+  text-decoration:none !important;
+  white-space:nowrap;
+  
+  display:inline-block;
+  vertical-align:baseline;
+  position:relative;
+  cursor:pointer;
+  padding:10px 20px;
+  
+  background-repeat:no-repeat;
+
+  /* The following two rules are fallbacks, in case
+     the browser does not support multiple backgrounds. */
+
+  background-position:bottom left;
+  background-image:url('../image/button_bg.png');
+  
+  /* Multiple backgrounds version. The background images
+     are defined individually in color classes */
+  
+  background-position:bottom left, top right, 0 0, 0 0;
+  background-clip:border-box;
+  
+  /* Applying a default border raidus of 8px */
+  
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  
+  /* A 1px highlight inside of the button */
+  
+  -moz-box-shadow:0 0 1px #fff inset;
+  -webkit-box-shadow:0 0 1px #fff inset;
+  box-shadow:0 0 1px #fff inset;
+  
+  /* Animating the background positions with CSS3 */
+  /* Currently works only in Safari/Chrome */
+  
+  -webkit-transition:background-position 1s;
+  -moz-transition:background-position 1s;
+  transition:background-position 1s;
+}
+
+.button:hover{
+  
+  /* The first rule is a fallback, in case the browser
+     does not support multiple backgrounds
+  */
+  
+  background-position:top left;
+  background-position:top left, bottom right, 0 0, 0 0;
+}
+
+.button:active{
+  /* Moving the button 1px to the bottom when clicked */
+  bottom:-1px;
+}
+
+/* The three buttons sizes */
+
+
+.button.small { 
+    width: 300px;
+    height: 60px;
+    margin:1%;
+  }
+
+/* A more rounded button */
+
+.button.rounded{
+  -moz-border-radius:4em;
+  -webkit-border-radius:4em;
+  border-radius:4em;
+}
+
+
+/* Defining four button colors */
+
+
+
+/* Orange Button */
+
+.orange.button{
+  color:#fff !important;
+  font-weight: bold !important;
+  font-size: 15px !important;
+  border:1px solid #bea280 !important;  
+  background-color: #e38d27;
+  
+  background-image:url('../image/button_bg.png'), url('../image/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(232,189,45,1) 0,rgba(232,189,45,0) 100px),-moz-linear-gradient(#f1982f, #d4821f);
+  background-image:url('../image/button_bg.png'), url('../image/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(232,189,45,1)), to(rgba(232,189,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1982f), to(#d4821f));
+}
+
+.orange.button:hover{
+  background-color:#ec9732;
+  
+  background-image:url('../image/button_bg.png'), url('../image/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(241,192,52,1) 0,rgba(241,192,52,0) 100px),-moz-linear-gradient(#f9a746, #e18f2b);
+  background-image:url('../image/button_bg.png'), url('../image/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(241,192,52,1)), to(rgba(241,192,52,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9a746), to(#e18f2b));
+}
+
+
+
+/*williams*/
+
+.showingData {
+  display: none;
+}
+
+#williamstodo {
+
+  background: #fff;
+ margin-top: 50px;
+ height: 640px;
+ 
+}
+
+#williamstodo h1 {
+   background-image: url('../image/ASWE.gif') no-repeat center left;
+  padding: 2%;
+  text-align: center;
+  border:solid 3px #E9A425;
+  border-radius: 8px;
+}
+
+.wboton {
+    transition-duration: 0.4s;
+    background-color: #E9A425;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.wboton:hover {
+    background-color: white; 
+    color: black;
+    width: 100px;
+    height: 30px;
+      -moz-transform:scale(1);
+-webkit-transform:scale(1.10);
+}
+
+.divinfo {
+  background-image: url("../image/degradado.jpg");
+   margin-right: 100px;
+ height: 600px;
+ width: auto;
+ padding: 40px;
+ border-radius: 8px;
+ text-align: justify;
+ color:#fff;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+
+
+
+
+//*ADOPTA*/
+
+
+#primero {
+ background: #fff;
+ margin-top: 50px;
+ height: 618px;
+ 
+}
+
+#titulo {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.services{
+  border:solid;
+  border-color: #E9A425;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.services:hover{
+  -moz-transform:scale(1);
+-webkit-transform:scale(1.10);
+background-color: rgba(215, 155, 46, 0.6);
+}
+
+#ojo {
+ 
+  padding-bottom: 30px;
+}
+
+#dona {
+  padding-bottom: 30px;
+}
+
+.botoninicio {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid #E9A425;
+    border-radius: 12px;
+}
+
+.botoninicio:hover {
+    background-color: #E9A425; 
+    color: white;
+}
+
+/*PRINCIPAL*/
+
+#barra {
+  width: 1160px;
+  margin-left: -5px;
+}
+
+body {
+  /*background-image: url(../image/fondo.jpg);*/
+    font-style: Calibri;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   color:#fff;
+   background-color:#000;
+    height: 100%;
+    margin:auto;
+}
+
+#mainNav {
+	background-color: rgb(255, 255, 255);
+}
+
+#mainNav a {
+	color: #E9A425;
+}
+
+#mainNav a:hover{
+  color: #fff;
+  background-color: rgba(215, 155, 46, 0.6);
+}
+
+#mainNav a:focus{
+  color: #E9A425;
+  background-color: rgba(215, 155, 46, 0.6);
+}
+
+#mainNav a:active{
+  color: #E9A425;
+  background-color: rgba(215, 155, 46, 0.6);
+}
+
+#adopta {
+ border: solid 1px #E9A425;
+}
+
+#margen {
+  margin-top: 1%;
+}
+
+#movimiento {
+	margin-top: 10%;
+}
+
+
+/*enfermedades raras*/
+
+#enfermedades {
+  margin-top: 50px;
+  border-right: solid 5px #E9A425;
+  border-left: solid 5px #E9A425;
+  padding-bottom: 20px;
+  background-color: #fff;
+}
+
+#enfermedades h1 {
+  text-align: center;
+  color:#E9A425;
+
+}
+
+#corazon:hover{
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+
+}
+
+#barras {
+  height: 35px;
+}
+
+#barras i {
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 8px;
+}
+
+
+/*COMENTARIOS*/
+
+
+#enviar3{
+  transition-duration: 0.4s;
+    background-color: #E9A425;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 350px;
+    height: 60px;
+}
+
+#opiniones {
+ margin-top: 80px;
+ width: 400px;
+ margin-bottom: 0 auto;
+ margin-left: 0 auto;
+ margin-right: 0 auto;
+
+}
+
+#coment {
+  margin-top: 20px;
+}
+
+table {
+  text-align: center;
+  max-width: 350px;
+  max-height: 100px;
+  margin-top: 10px;
+  border: solid 2px #E9A425;
+}
+table tr td{
+  padding: 10px;
+  width: 400px;
+  height: 40px;
+}
+
+#enviar1 {
+    transition-duration: 0.4s;
+    background-color: #E9A425;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+#enviar1:hover {
+    background-color: white; 
+    color: black;
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+}
+
+/*estrellas*/
+.ec-stars-wrapper {
+  /* Espacio entre los inline-block (los hijos, los `a`) 
+     http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+  font-size: 0;
+  /* Podríamos quitarlo, 
+    pero de esta manera (siempre que no le demos padding), 
+    sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+    también se esté haciendo hover a alguna estrella */
+  display: inline-block;
+}
+.ec-stars-wrapper a {
+  text-decoration: none;
+  display: inline-block;
+  /* Volver a dar tamaño al texto */
+  font-size: 32px;
+  font-size: 2rem;
+  
+  color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+  color: #E9A425;
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+  color: #888;
+}
+
+
+/*CONTACTA*/
+
+#contactatodo{
+  margin-top: 80px;
+}
+
+#contactatodo h1 {
+  padding-bottom: 20px;
+  text-align: center;
+
+
+}
+
+#contactaform {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../image/border.png) 20% round;
+}
+
+#contactos {
+  border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../image/border.png) 20% round;
+    margin-right: 100px;
+}
+
+.btn {
+  -webkit-border-radius: 17;
+  -moz-border-radius: 17;
+  border-radius: 17px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  background: #E9A425;
+  padding: 12px 22px 12px 22px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #e6c283;
+  background-image: -webkit-linear-gradient(top, #e6c283, #E9A425);
+  background-image: -moz-linear-gradient(top, #e6c283, #E9A425);
+  background-image: -ms-linear-gradient(top, #e6c283, #E9A425);
+  background-image: -o-linear-gradient(top, #e6c283, #E9A425);
+  background-image: linear-gradient(to bottom, #e6c283, #E9A425);
+  text-decoration: none;
+}
+
+
+/*MOVIMIENTO*/
+
+#carrusel {
+  margin-top: 50px;
+
+}
